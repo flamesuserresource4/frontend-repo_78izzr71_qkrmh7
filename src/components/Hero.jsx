@@ -15,16 +15,16 @@ const Hero = () => {
 
       <div className="relative z-10 mx-auto flex max-w-7xl flex-col items-center px-6 pb-24 pt-32 md:pt-40">
         <span className="mb-4 rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs font-medium tracking-wide text-white/80 backdrop-blur">
-          SIJA • Information Systems, Networks & Applications
+          Faizaa • SIJA (Information Systems, Networks & Applications)
         </span>
         <h1 className="text-center text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
-          Hi, I’m <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">a High School Student</span>
+          Hi, I’m <span className="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">Faizaa</span>
           <br className="hidden sm:block" />
-          passionate about building modern tech
+          I build websites and manage networks
         </h1>
         <p className="mt-6 max-w-2xl text-center text-base text-white/80 md:text-lg">
-          I major in SIJA where I explore networks, backend fundamentals, and interactive web apps. I love turning ideas into
-          polished, playful experiences.
+          I’m a high school SIJA student who loves turning ideas into fast, responsive web experiences and keeping
+          networks reliable and secure.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <a

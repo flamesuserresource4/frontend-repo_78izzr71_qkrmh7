@@ -14,7 +14,7 @@ function App() {
       <Projects />
       <Contact />
       <footer className="bg-slate-950 py-10 text-center text-white/60">
-        <p className="text-sm">© {new Date().getFullYear()} SIJA Student Portfolio • Built with React, Tailwind & Spline</p>
+        <p className="text-sm">© {new Date().getFullYear()} Faizaa • Built with React, Tailwind & Spline</p>
       </footer>
     </div>
   );

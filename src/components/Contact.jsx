@@ -9,7 +9,7 @@ const Contact = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    setStatus('Thanks! Your message has been noted.');
+    setStatus('Thanks, Faizaa! Your message has been sent.');
     setForm({ name: '', email: '', message: '' });
   };
 
@@ -18,22 +18,10 @@ const Contact = () => {
       <div className="mx-auto max-w-3xl px-6">
         <div className="mb-10 text-center">
           <h2 className="text-3xl font-bold md:text-4xl">Let’s Connect</h2>
-          <p className="mt-3 text-white/70">Have feedback, ideas, or opportunities? I’d love to hear from you.</p>
+          <p className="mt-3 text-white/70">Got a project or collaboration in mind? I’d love to hear from you.</p>
         </div>
 
         <form onSubmit={onSubmit} className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-          <div className="mb-4 flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 px-3 py-2">
-            <Mail className="h-5 w-5 text-white/70" />
-            <input
-              className="w-full bg-transparent text-sm text-white placeholder-white/50 outline-none"
-              name="email"
-              type="email"
-              required
-              value={form.email}
-              onChange={onChange}
-              placeholder="Your email"
-            />
-          </div>
           <div className="mb-4 grid gap-4 sm:grid-cols-2">
             <input
               className="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white placeholder-white/50 outline-none"
@@ -42,12 +30,18 @@ const Contact = () => {
               onChange={onChange}
               placeholder="Your name"
             />
-            <input
-              className="rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-sm text-white placeholder-white/50 outline-none"
-              name="subject"
-              onChange={onChange}
-              placeholder="Subject (optional)"
-            />
+            <div className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/5 px-3 py-2">
+              <Mail className="h-5 w-5 text-white/70" />
+              <input
+                className="w-full bg-transparent text-sm text-white placeholder-white/50 outline-none"
+                name="email"
+                type="email"
+                required
+                value={form.email}
+                onChange={onChange}
+                placeholder="Your email"
+              />
+            </div>
           </div>
           <textarea
             className="mb-4 h-32 w-full rounded-lg border border-white/10 bg-white/5 p-3 text-sm text-white placeholder-white/50 outline-none"
@@ -65,7 +59,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-      <div className="pointer-events-none absolute left-0 top-0 -z-0 h-40 w-full bg-gradient-to-b from-cyan-500/10 to-transparent" />
+      <div className="pointer-events-none absolute left-0 top-0 h-40 w-full bg-gradient-to-b from-cyan-500/10 to-transparent" />
     </section>
   );
 };

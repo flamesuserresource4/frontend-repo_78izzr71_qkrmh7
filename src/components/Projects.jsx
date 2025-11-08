@@ -3,23 +3,23 @@ import { Github, Globe } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Network Topology Visualizer',
-    desc: 'A small web app to sketch LAN topologies and understand subnetting quickly.',
-    tags: ['React', 'Tailwind', 'Net Concepts'],
+    title: 'Personal Portfolio',
+    desc: 'A responsive portfolio showcasing my skills in web development and networking.',
+    tags: ['React', 'Tailwind', 'Spline'],
     live: '#',
     code: '#'
   },
   {
-    title: 'SIJA Notes Hub',
-    desc: 'Organized notes on OSI model, IP addressing, and basic security with flashcards.',
-    tags: ['Vite', 'LocalStorage'],
+    title: 'Network Lab',
+    desc: 'Small experiments setting up LANs, IP addressing, and basic routing.',
+    tags: ['Networking', 'Subnetting'],
     live: '#',
     code: '#'
   },
   {
-    title: 'Interactive Portfolio',
-    desc: 'This site — blending playful 3D with clean UI and responsive design.',
-    tags: ['Spline', 'React', 'Tailwind'],
+    title: 'UI Components',
+    desc: 'Reusable, accessible components for building websites faster.',
+    tags: ['React', 'Design'],
     live: '#',
     code: '#'
   }
@@ -31,7 +31,7 @@ const Projects = () => {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mb-12 text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">Projects</h2>
-          <p className="mt-3 text-slate-600">A selection of things I’ve built or explored recently.</p>
+          <p className="mt-3 text-slate-600">A few things I’ve worked on and explored.</p>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
